@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TITULO DEL SITIO -->
+    <title>CV - Candela Viviana Checa</title>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <!-- DOCUMENTOS ENLAZADOS -->
+     <link rel="stylesheet" href="./cv.css">
+     <link rel="stylesheet" href="./fontawesome/css/all.css">
+     <link rel="stylesheet" href="./cv-queries.css">
+
+</head>
+
+
+<body>
+
+    <div class="contenedor-web">
+
+        <!-- CONTENEDOR 1: HEADER -->
+        <header class="header">
+            <!-- Contenido -->
+            <div class="contenido-header">
+                <div class="foto-perfil">
+                    <img src="./imagenes/Yo3.png" class="foto-cande" alt="foto de perfil">
+                </div>
+                <h1 class="titulo-header">CANDELA CHECA</h1>
+                <h2 class="profesion">UX/UI Designer</h2>
+                <div class="toggler">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true" class="menu-hamburguesa"></i>
+                </div>
+            </div>
+            <!-- Navegacion -->
+            <nav>
+                <ul id="menu-principal">
+                    <li><a href="#inicio" class="opcion-menu">
+                        <i class="fa-solid fa-house"></i>Inicio</a></li>
+                    
+                    <li><a href="#sobre-mi" class="opcion-menu"><i class="fa-solid fa-user"></i>Sobre mi</a></li>
+                    
+                    <li><a href="#experiencia" class="opcion-menu"><i class="fa-solid fa-briefcase"></i>Experiencia</a></li>
+                    
+                    <li><a href="#formacion" class="opcion-menu"><i class="fa-solid fa-graduation-cap"></i>Formación</a></li>
+
+                    <li><a href="#contacto" class="opcion-menu"><i class="fa-solid fa-message"></i>Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTENEDOR 2: PAGINAS DEL SITIO -->
+        <div class="contenedor-paginas">
+
+            <!-- Pagina 1 - INICIO -->
+            <section id="inicio">
+                <div class="contenido-inicio">
+                    <div class="overlay">
+                        <div class="titulo-profesion">
+                            <h1 class="titulo-inicio">Hola, soy Cande! <br> 
+                            <span class="typed"></span> </h1>    
+                        </div>
+                        <div class="cta">
+                            <a href="#" target="_blank" class="cta-descargarcv"><i class="fa-solid fa-download"></i>Descargar CV</a>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            
+            <!-- Pagina 2 - SOBRE MI -->
+            <section id="sobre-mi" class="secciones">
+                <h1 class="titulo-seccion">SOBRE MI</h1>
+                <!-- 1. Quien soy -->
+                <article class="quien-soy">
+                    <h3>Quien soy</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, nisi. Cupiditate eius nam voluptas incidunt numquam nihil dolores ullam quas impedit enim animi, nulla officia hic vero sapiente ipsum deleniti at odit et aperiam accusamus, error architecto voluptates repellendus! Quasi nesciunt qui architecto placeat natus expedita dolorum odit magni voluptates adipisci mollitia maxime a consequatur iure amet ratione, repellat quia? Rerum dolores enim ipsa, corporis aut dolor deserunt esse nulla dolore assumenda repellendus quo quis cumque, deleniti possimus delectus, ipsum tempore dignissimos odio minus aspernatur blanditiis? Vitae facilis repudiandae nesciunt rerum amet veritatis quod quos, dolore quam repellat quis eaque?</p>
+                </article>
+                <!-- 2. Que hago -->
+                <article class="que-hago">
+                    <h3>Que hago</h3>
+                    <!-- Roles -->
+                    <div class="contenedor-que-hago">
+                        <!-- Rol 1 -->
+                        <div class="roles">
+                            <div class="iconos-roles rol1"><i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="textos-roles">
+                                <h4>UX/UI design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam ipsum natus dolor expedita reiciendis quae laudantium officiis praesentium maxime!</p>
+                            </div>
+                        </div>
+                        <!-- Rol 2 -->
+                        <div class="roles">
+                            <div class="iconos-roles rol2"><i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="textos-roles">
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam ipsum natus dolor expedita reiciendis quae laudantium officiis praesentium maxime!</p>
+                            </div>
+                        </div>
+                        <!-- Rol 3 -->
+                        <div class="roles">
+                            <div class="iconos-roles rol3"><i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div class="textos-roles">
+                                <h4>Product discovery</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam ipsum natus dolor expedita reiciendis quae laudantium officiis praesentium maxime!</p>
+                            </div>                           
+                        </div>
+                        <!-- Rol 4 -->
+                        <div class="roles">
+                            <div class="iconos-roles rol4"><i class="fa-solid fa-marker"></i>
+                            </div>
+                            <div class="textos-roles">
+                                <h4>Digital content</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam ipsum natus dolor expedita reiciendis quae laudantium officiis praesentium maxime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Pagina 3 - EXPERIENCIA -->
+            <section id="experiencia" class="secciones">
+                <h1 class="titulo-seccion">EXPERIENCIA</h1>
+                <div class="experiencia">
+                    <!-- 1. Experiencia profesional -->
+                    <article class="experiencia-profesional">
+                        <h3>Experiencia Profesional</h3>
+                        <!-- Trabajos -->
+                        <div class="contenedor-experiencia">
+                            <!-- Trabajo 1 -->
+                            <div class="trabajos">
+                                <div class="periodos">
+                                    <h5>2022</h5>
+                                    <span class="empresa">Empresa 1</span>
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Trabajo 1</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores praesentium velit explicabo eaque iste a doloremque ipsum ad ratione nihil!</p>
+                                </div>
+                            </div>
+                            <!-- Trabajo 2 -->
+                            <div class="trabajos">
+                                <div class="periodos">
+                                    <h5>2019 - 2022</h5>
+                                    <span class="empresa">Empresa 2</span>
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Trabajo 2</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores praesentium velit explicabo eaque iste a doloremque ipsum ad ratione nihil!</p>
+                                </div>
+                            </div>
+                            <!-- Trabajo 3 -->
+                            <div class="trabajos">
+                                <div class="periodos">
+                                    <h5>2017 - 2019</h5>
+                                    <span class="empresa">Empresa 3</span>
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Trabajo 3</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores praesentium velit explicabo eaque iste a doloremque ipsum ad ratione nihil!</p>
+                                </div>
+                            </div>
+                            <!-- Trabajo 4 -->
+                            <div class="trabajos">
+                                <div class="periodos">
+                                    <h5>2014 - 2017</h5>
+                                    <span class="empresa">Empresa 4</span>
+                                </div>
+                                <div class="descripcion">
+                                    <h4>Trabajo 4</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores praesentium velit explicabo eaque iste a doloremque ipsum ad ratione nihil!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 2. Skills -->
+                    <article class="skills">
+                        <!-- 2.1 Profesionales-->
+                        <section class="skills-profesionales">
+                            <h3>Skills profesionales</h3>
+                            <div class="contenedor-skills-prof">
+                                <!-- Profesional 1 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 1</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 2 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 2</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 3 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 3</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 4 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 4</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 5 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 5</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 6 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 6</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 7 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 7</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <!-- Profesional 8 -->
+                                <div class="skills-prof">
+                                    <h4>Skill 8</h4>
+                                    <ul class="rating">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- 2.2 Personales -->
+                        <section class="skills-personales">
+                            <h3>Skills personales</h3>
+                            <div class="contenedor-skills-pers">
+                                <!-- Personal 1 -->
+                                <div class="skills-pers">
+                                    <div class="iconos-personales">
+                                        <img src="./iconos/Analytics.png" alt="figma">
+                                    </div>
+                                    <h5 class="titulo-skill">personal 1</h5>
+                                </div>
+                                <!-- Personal 2 -->
+                                <div class="skills-pers">
+                                    <div class="iconos-personales">
+                                        <img src="./iconos/Illustrator.png" alt="figma">
+                                    </div>
+                                    <h5 class="titulo-skill">personal 2</h5>
+                                </div>
+                                <!-- Personal 3 -->
+                                <div class="skills-pers">
+                                    <div class="iconos-personales">
+                                        <img src="./iconos/Photoshop.png" alt="figma">
+                                    </div>                                  <h5 class="titulo-skill">personal 3</h5>
+                                </div>
+                                <!-- Personal 4 -->
+                                <div class="skills-pers">
+                                    <div class="iconos-personales">
+                                        <img src="./iconos/Figma.png" alt="figma">
+                                    </div>
+                                    <h5 class="titulo-skill">personal 4</h5>
+                                </div>
+                                <!-- Personal 5 -->
+                                <div class="skills-pers">
+                                    <div class="iconos-personales">
+                                        <img src="./iconos/Invision.png" alt="figma">
+                                    </div>
+                                    <h5 class="titulo-skill">personal 5</h5>
+                                </div>
+                            </div>   
+                        </section>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Pagina 4 - FORMACION -->
+            <section id="formacion" class="secciones">
+                <h1 class="titulo-seccion">FORMACION</h1>
+                <!-- 1. Formacion Academica -->
+                <article class="formacion-academica">
+                    <h3>Formación académica</h3>
+                    <!-- Titulos | Estudios -->
+                    <div class="contenedor-formacion">
+                        <!-- Titulo 1-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2022 - 2024</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info"><h4>Titulo 1</h4>
+                                <span class="institucion">Institución 1</span>
+                            </div>
+                        </section>
+                        <!-- Titulo 2-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2021</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info"> 
+                                <h4>Titulo 2</h4>
+                                <span class="institucion">Institución 2</span>
+                            </div>
+                        </section>
+                        <!-- Titulo 3-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2020</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info">
+                                <h4>Titulo 3</h4>
+                                <span class="institucion">Institución 3</span>
+                            </div>
+                        </section>
+                        <!-- Titulo 4-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2019</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info">
+                                <h4>Titulo 4</h4>
+                                <span class="institucion">Institución 4</span>
+                            </div>
+                        </section>
+                        <!-- Titulo 5-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2018</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info">
+                                <h4>Titulo 5</h4>
+                                <span class="institucion">Institución 5</span>
+                            </div>
+                        </section>
+                        <!-- Titulo 6-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2017</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info">
+                                <h4>Titulo 6</h4>
+                                <span class="institucion">Institución 6</span>
+                            </div>
+                        </section>
+                        <!-- Titulo 7-->
+                        <section class="formaciones">
+                            <div class="cuando">
+                                <h5>2016</h5>
+                            </div>
+                            <div class="divisor"></div>
+                            <div class="info">
+                                <h4>Titulo 7</h4>
+                                <span class="institucion">Institución 7</span>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+                <!-- 2. Conocimiento de software -->
+                <article class="conocimiento-software">
+                    <h3>Conocimiento de software</h3>
+                    <div class="contenedor-software">
+                        <!-- Software 1 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Figma.png" alt="figma">
+                            </div>                            
+                            <h5 class="titulo-skill">Figma</h5>
+                        </div>
+                        <!-- Software 2 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Xd.png" alt="xd">
+                            </div>
+                            <h5 class="titulo-skill">Adobe Xd</h5>
+                        </div>
+                        <!-- Software 3 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Photoshop.png" alt="photoshop">
+                            </div>
+                            <h5 class="titulo-skill">Photoshop</h5>
+                        </div>
+                        <!-- Software 4 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Illustrator.png" alt="figma" class="iconos-skills">
+                            </div>
+                            <h5 class="titulo-skill">Illustrator</h5>
+                        </div>
+                        <!-- Software 5 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Invision.png" alt="figma" class="iconos-skills">
+                            </div>
+                            <h5 class="titulo-skill">Invision</h5>
+                        </div>
+                        <!-- Software 6 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Asana.png" alt="asana">
+                            </div>
+                            <h5 class="titulo-skill">Asana</h5>
+                        </div>
+                        <!-- Software 7 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Jira.png" alt="jira">
+                            </div>                            
+                            <h5 class="titulo-skill">Jira</h5>
+                        </div>
+                        <!-- Software 8 -->
+                        <div class="software">
+                            <div class="icono-software">
+                                <img src="./iconos/Analytics.png" class=analytics alt="analytics">
+                            </div>
+                            <h5 class="titulo-skill">Analytics</h5>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Pagina 5 - CONTACTO -->
+            <section id="contacto" class="secciones">
+                <h1 class="titulo-seccion">CONTACTO</h1>
+                <!-- 1. Dejame tu mensaje -->
+                <article class="formulario">
+                    <h3>Dejame un mensaje</h3>
+                    <div class="contenedor-formulario">
+                        <!-- 1.1 Formulario -->
+                        <div class="form">
+                            <form method="post" id="formulario-contacto" action="php/contact.php">
+                                <input name="name" id="name" type="text" placeholder="Nombre" required>
+                                <input name="email" id="email" type="email" placeholder="Email" required>
+                                <textarea name="mensaje" id="mensaje" placeholder="Escribí acá tu mensaje" required></textarea>
+                                <input class="bt-submit" type="submit" value="Enviar mensaje">
+                            </form>                   
+                        </div>
+                        <!-- 1.2 Imagen -->
+                        <div class="imagen-form">
+                            <img src="./imagenes/mailbox (1).png" alt="imagen de un buzon" class="mailbox">
+                        </div>
+                    </div>
+                </article>
+                <!-- 2. Informacion de contacto -->
+                <article class="informacion-contacto">
+                    <h3>Información de contacto</h3>
+                    <!-- Medios de contacto -->
+                    <div class="contenedor-informacion">
+                        <!-- Whatsapp -->
+                        <section class="medios-contacto whatsapp">
+                            <div class="icono-info">
+                                <a href="https://wa.me/5491136422932"><i class="fa-brands fa-whatsapp" class="info-icono"></i></a>
+                            </div>
+                            <div class="texto-info">
+                                <h4>Whatsapp</h4>
+                                <p>1130000000</p>
+                            </div>
+                        </section>
+                        <!-- Email -->
+                        <section class="medios-contacto email">
+                            <div class="icono-info">
+                                <a href="mailto:cvcheca@gmail.com"><i class="fa-regular fa-envelope" class="info-icono"></i></a>
+                            </div>
+                            <div class="texto-info">
+                                <h4>Email</h4>
+                                <p>cvcheca@gmail.com</p>
+                            </div>
+                        </section>
+                        <!-- Ubicacion -->
+                        <section class="medios-contacto ubicacion">
+                            <div class="icono-info">
+                                <a href="https://www.google.com/maps/place/Colegiales,+CABA/@-34.5746496,-58.460402,15z/data=!3m1!4b1!4m5!3m4!1s0x95bcb5dd407c17db:0xf700e263552c9fa5!8m2!3d-34.5760225!4d-58.4483554"><i class="fa-solid fa-location-dot" class="info-icono"></i></a>
+                            </div>
+                            <div class="texto-info">
+                                <h4>Dirección</h4>
+                                <p>Colegiales, CABA, Argentina</p>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- SLIDE MENU -->
+    <script>
+        $(function() {
+            $('.toggler').on('click', function() {
+                $('nav').slideToggle(500);
+            });
+        });
+    </script>
+
+    <!-- Librerias JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./main.js"></script>        
+
+</body>
+</html>
