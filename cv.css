@@ -1,0 +1,589 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* ESTILOS GENERALES */
+
+html{
+font-family: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --celeste-activo : #0099e5; /* Celeste activo */
+    --celeste-iconos: #11d6f0;
+    --celeste-hover : rgba(176, 236, 243, 0.49); /* Celeste hover */
+    --celeste-fondo : #c4f0f5; /* Celeste perfil*/
+    --color-fondo : #f7f9fc; /* Background color*/
+    --H1 : #333333; /* H1 */
+    --H3 : #444444; /* H3 */
+    --H2-parrafos : #555555; /* H2 | Parrafos */
+    --iconos-titulos : #a8abac; /* Iconos | Titulos Sección */
+    --hover : #807d7d;
+}
+
+
+/* WEB */
+.contenedor-web{
+    display: flex;    
+    flex-direction: column;
+}
+
+
+/* CONTENEDOR 1: HEADER */
+/*Header*/
+.header{
+    padding: 5px 16px;
+    width: 100vw;
+    height: 55px;
+    background-color: var(--color-fondo);
+    border-bottom: 2px solid var(--celeste-fondo) ;
+    box-shadow: 2px 0 6px 2px gray;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.contenido-header{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+       
+}
+
+.foto-perfil .foto-cande{
+    max-width: 50px;
+    vertical-align: middle;
+    padding: 2px;
+    border-radius: 100%;     
+}
+
+.titulo-header{
+    color: var(--H1);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    padding-left: 60px;     
+}
+
+.profesion{	
+    display: none;
+	color: var(--H2-parrafos);
+	font-size: 12px;
+    font-weight: 400;
+}
+
+.toggler {
+    color: var(--celeste-iconos);
+    cursor: pointer;    
+}
+
+/* Navegación */
+nav{
+    padding:10px;
+    display: none;
+    background-color: var(--color-fondo);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+}
+nav ul{
+    text-align: left;
+}
+nav ul li{   
+    list-style-type: none;
+    padding-left: 5px;
+}
+nav ul li a{ 
+    color: var(--H1);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500; 
+    display: block;
+    padding: 10px 20px;
+    border-radius: 30px 0 0 30px;
+    margin-bottom: 8px;   
+}
+
+nav ul li a:active{
+    background-color: var(--celeste-hover);
+    color: var(--celeste-activo);
+}
+
+nav ul li a i{
+    background-color: var(--celeste-iconos);
+    color: #ffffff;
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 4px   
+}
+
+/* CONTENEDOR 2 - PÁGINAS DEL SITIO */
+.contenedor-paginas{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;  
+}
+
+/* Pagina 1 - INICIO */ 
+.contenido-inicio{
+    width: 100%;
+    height: 280px;
+    background-image: url(./imagenes/Ux3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+}
+
+.titulo-inicio{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.typed{
+    font-style: normal;
+    color: white;
+	font-size: 16px;
+    font-weight: 400;
+}
+
+.typed-cursor{
+    font-size: 16px;
+}
+
+.overlay{
+    width: 80%;
+    min-height: 180px;
+    padding: 20px 35px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: rgba(58, 62, 62, 0.543);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    min-width: 180px;
+    padding: 8px 8px;
+    border-radius: 100px;
+    background: linear-gradient(135deg,#11d6f0,#6ceeff,#11d6f0,#ccc,#6ceeff);
+    background-size: 300px 300px;
+}
+
+.cta-descargarcv{
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+
+}
+.cta-descargarcv i{
+    margin-right: 10px;
+}
+
+
+/* Formato general de las secciones
+ */
+
+.secciones{
+    padding: 10px 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titulo-seccion{
+    color: var(--iconos-titulos);
+    width: 100%;
+    border-bottom: 1px solid var(--iconos-titulos);
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+h3{
+    width: fit-content;
+    border-bottom: 2px solid #11d6f0;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-variant: small-caps;
+    color: var(--H3);
+}
+
+h4{   
+    font-size: 16px;
+    color: var(--H3);
+    font-weight: 600;
+    margin: 4px 0 8px 0;
+}
+
+h5{
+    font-size: 14px;
+    color: var(--H1);
+    font-weight: 600;
+    margin: 4px 0;
+    
+}
+
+p{
+    text-align: left;
+    font-size: 16px;
+    color: var(--H2-parrafos);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+/* Pagina 2 - SOBRE MI */
+
+.quien-soy{
+    margin-bottom: 24px;
+}
+
+.que-hago{
+    margin-bottom: 0px;
+}
+
+.roles{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-bottom: 16px;
+}
+
+.iconos-roles{
+    font-size: 25px;
+    color: var(--iconos-titulos);
+    margin-right: 20px;
+    min-width: 30px;
+}
+
+
+/* Pagina 3 - EXPERIENCIA */
+
+.experiencia-profesional{
+    margin-bottom: 24px;
+}
+.contenedor-experiencia{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--iconos-titulos);
+    margin-bottom: 16px;
+}
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    padding-bottom: 16px; 
+}
+
+.trabajos::after{
+    content: '';
+    position: absolute;
+    margin-top: 7px;
+    width: 10px;
+    height: 10px;
+    margin-left: -31px;
+    border-radius: 10px;
+    border: 2px solid #11d6f0;
+    background-color: #f7f9fc;
+}
+
+.empresa{
+    font-size: 12px;
+    color: var(--iconos-titulos);
+    margin-bottom: 8px;
+    position: absolute;
+    line-height: 12px;
+}
+
+.periodos{
+    margin-bottom: 12px;
+}
+
+/* Skills profesionales */
+
+.skills{
+    min-width: 100%;
+}
+
+.contenedor-skills-prof{
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    margin-bottom: 24px;
+}
+
+.skills-prof{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4px;
+    justify-content: space-between;
+    align-items: flex-start;   
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.rating li{
+    list-style-type: none;
+}
+
+.rating li i{
+    color: var(--celeste-iconos);
+    letter-spacing: 4px;
+    
+}
+
+/* Skills personales */
+
+.contenedor-skills-pers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.skills-pers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 80px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 8px; 
+}
+
+.iconos-personales img{
+    width: 50px;   
+}
+
+.titulo-skill{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--H3);
+}
+
+
+/* Pagina 4 - FORMACION */
+
+.formacion-academica{
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.contenedor-formacion{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--iconos-titulos);    
+}
+
+.formaciones{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 24px 24px;
+}
+
+.formaciones::after{
+    content: '';
+    position: absolute;
+    margin-top: 7px;
+    width: 10px;
+    height: 10px;
+    margin-left: -31px;
+    border-radius: 10px;
+    border: 2px solid #11d6f0;
+    background-color: #f7f9fc;
+}
+
+.institucion{
+    font-size: 14px;
+    color: var(--iconos-titulos);
+    margin-bottom: 8px;
+    position: absolute;
+    line-height: 8px;
+}
+
+.contenedor-software{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+.software{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 75px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.icono-software img{
+    width: 50px;
+}
+
+
+/* Pagina 5 - CONTACTO */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+}
+
+.imagen-form{
+    display: none;
+}
+
+input, textarea{
+    height: 32px;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    color: inherit;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 24px;
+    overflow: visible;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+input:hover, input:active, textarea:hover, textarea:active {
+    text-indent: 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #11d6f0;
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+    height: 100px;
+}
+
+.bt-submit{
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid #11d6f0;
+    background-size: 300px 300px;
+    margin: 20px 0;
+    padding: 8px 16px;
+    max-width: 240px;
+    align-self: center;
+    height: auto;    
+}
+
+.bt-submit:hover, .bt-submit:active{ 
+    color: #ffffff;
+    background: #11d6f0;
+    text-indent: 0px;
+}
+
+/* Información de contacto */
+
+.contenedor-informacion{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;       
+}
+
+.medios-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    padding-top: 8px;
+    align-items: center;
+}
+
+.icono-info{
+    width: auto;
+    display: flex;
+    padding: 0 16px;
+    justify-content: left;
+    align-items: center;
+    border-right: 1px solid #a8abac;   
+}
+
+
+.icono-info i{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    color: #ffffff;
+    background: #11d6f0;
+    border-radius: 100%;    
+}
+
+.icono-info i:hover, .icono-info i:active{
+    transform: translateY(-5px);
+}
+
+.texto-info{
+    line-height: 10px;
+    padding-left: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
